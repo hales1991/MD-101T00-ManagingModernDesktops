@@ -28,7 +28,7 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 7.  Select the left arrow in the upper left corner to go back to the main Windows Settings page.
 8.  In the **Settings** app, select **Update and Security**.
 9.  On the **Update & Security** page, select **Windows Security** and then **Open Windows Security**.
-10.  On the **Windows Security** page, select the **Open Navigation** button and then select **Virus & threat protection**.
+10.  On the **Windows Security** page, select the **Open Navigation** button (3 horizontal lines) and then select **Virus & threat protection**.
 11.  On the **Virus & threat protection** page, under **Virus & threat protection settings**, select **Manage settings** . Scroll down to **Exclusions** and select **Add or remove exclusions**.
 12.  On the **Exclusions** page, verify that no exclusions have been configured.
 13.  Close the **Windows Security** window.
@@ -68,13 +68,13 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
 4.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
 5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the navigation bar.
-6.  On the **Devices | Overview** page, select **Configuration Profiles**.
+6.  On the **Devices | Overview** pane, select **Configuration Profiles**.
 7.  On the **Devices | Configuration profiles** blade, in the details pane, select **Create profile**.
 8.  In the **Create a profile** blade, select the following options, and then select **Create**:
 
     -   Platform: **Windows 10 and later**
 
-    -   Profile: **Device restrictions**
+    -   Profile: **Template** then select **Device restrictions**
 9.  In the **Basics** blade, enter the following information, and then select **Next**:
 
     -   Name: **Contoso Developer - standard**
@@ -84,7 +84,7 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 11.  Select **Block** next to the **Gaming** and **Privacy** options.
 12.  On the **Device restrictions** blade, expand **Start**. Scroll down and select **Block** next to **Most used apps**, **Recently added apps** and **Recently opened items in Jump Lists**.
 13.  On the **Device restrictions** blade, scroll down and expand **Microsoft Defender Antivirus**. 
-14.  Under **Microsoft Defender Antivirus,** scroll down and expand **Microsoft Defender Antivirus Exclusions**.
+14.  Expand **Microsoft Defender Antivirus Exclusions**.
 15.  Under **Microsoft Defender Antivirus Exclusions** in the **Files and folders** box, type the following:
      **C:\\DevProjects**.
 16.  In the **Processes** box, type the following:
@@ -93,7 +93,7 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 
 ### Task 5: Create the Contoso Developer device group
 
-1.  In the Microsoft Endpoint Manager admin center, in the navigation pane, select **Groups**.
+1.  In the Microsoft Endpoint Manager admin center, in the navigation pane, select **Portal menu** then select **Groups**.
 2.  On the **Groups | All groups** blade, select **New group**.
 3.  On the **New Group** blade, enter the following information:
 
@@ -140,7 +140,7 @@ You need to use Azure Active Directory (Azure AD) and Intune to manage members o
 2.  On the **Devices | Overview** blade, select **Configuration profiles**.
 3.  On the **Devices | Configuration profiles** blade, in the details pane, select the **Contoso Developer – standard** profile.
 4.  On the **Contoso Developer – standard** blade, select **Properties**.  Scroll down to the **Assignments** section, and select **Edit**.
-5.  In the **Assignments** section, select **Select groups to include**.
+5.  In the **Assignments** section, select **Add groups** in the included groups section.
 6.  On the **Select groups to include** blade, in the **Search** box, select **Contoso Developer devices** and then select **Select**.
 7.  Back on the **Device restrictions** blade, select **Review + save**, then select **Save**.
 8.  In the Microsoft Endpoint Manager admin center, select **Devices** in the breadcrumb navigation menu.
