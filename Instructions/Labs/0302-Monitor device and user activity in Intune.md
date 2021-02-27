@@ -14,7 +14,7 @@ You need to review Diego Siciliani's sign-in activity and general information pr
 2.  On the taskbar, select **Microsoft Edge**.
 3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
 4.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
-5.  On the **Microsoft Endpoint Manager admin center** page, select **Users**.
+5.  On the **Microsoft Endpoint Manager admin center** page, go to the navigation pane and select **Users**.
 6.  In the Users navigation pane, in the Activity section, select **Sign-ins**. 
 7.  In the Details pane, user sign-ins are listed. Select on the first entry where the **User** column displays **Diego Siciliani**.
 8.  In the **Details** pane, Diego Siciliani´s sign-in details are displayed. 
@@ -24,7 +24,7 @@ You need to review Diego Siciliani's sign-in activity and general information pr
 
 ### Task 2: Monitor device activity
 
-1.  In the Microsoft Endpoint Manager admin center, from the navigation pane, select **Devices**.
+1.  In the Microsoft Endpoint Manager admin center, from the navigation pane, Select **Portal menu** then select **Devices**.
 2.  In the Devices navigation pane, select **Overview**.
 3.  In the details pane, take note of the device information for enrolled devices. Select the ellipse icon (if shown) to view all of the overview tabs. Available tabs include **Enrollment status**, **Enrollment alerts**, **Compliance status**, **Configuration status**, and **Software update status**. Select each tab to view information.
 4.  Select **All devices**, and in the details pane, select **SEA-WS2**. Information about the device such as name, Primary user, and operating system is displayed.
