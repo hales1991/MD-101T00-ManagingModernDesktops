@@ -18,9 +18,9 @@ You've been asked to review the inventory for SEA-WS3.  Use Intune to review the
 4.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
 5.  In the Microsoft Endpoint Manager admin center, select **Devices** from the navigation bar.
 6.  In the Devices navigation pane, select **All devices** and in the details pane, select the **SEA-WS3** entry. Examine the various information displayed about the device.
-7.  Select **Properties** and note that you can change the **Management name**, **Device category** and **Device ownership**.
+7.  Select **Properties** in the navigation pane and note that you can change the **Management name**, **Device category** and **Device ownership**.
 8.  In the **Management name** field, replace the existing text with **SEA-WS3** and select **Save**.
-9.  Under **Monitor**, select **Hardware** and examine the hardware from **SEA-WS3**. You need to scroll down to see it all.
+9.  In the Navigation pane under **Monitor**, select **Hardware** and examine the hardware from **SEA-WS3**. You need to scroll down to see it all.
 10.  Under **Monitor**, select **Discovered apps** and examine the app inventory from **SEA-WS3**. You may need to scroll down to see it all.
 
 **Results**: After completing this exercise, you will have successfully reviewed device hardware and app inventory.
@@ -47,7 +47,7 @@ Management is requesting a report of all devices. They do not have access to the
 ### Task 2: Import Intune data into Microsoft Excel
 
 1.  On **SEA-CL1**, select **Start** and then select **Excel**.
-2.  In Excel, select **Browse**, select the **Downloads** folder and in the **All Excel Files** drop-down box, select **All Files**.
+2.  In Excel, select **Open other workbooks** and then select **Browse**, select the **Downloads** folder and in the **All Excel Files** drop-down box, select **All Files**.
 3.  In the **Open** dialog box, select the file you just extracted. Then select **Open**.
 4.  In the **Text Import Wizard – Step 1 of 3** dialog box, select **Delimited** and then select **Next**.
 5.  In the **Text Import Wizard – Step 2 of 3** dialog box, remove the check mark next to **Tab** and select the check box next to **Comma**. Then select **Next**.
@@ -73,7 +73,7 @@ Your organization uses Power BI for reporting.  You need to set up Power BI on S
 4.  On the taskbar, select **Microsoft Edge**.
 5.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the address bar, and then press **Enter**. 
 6.  Sign in as **admin\@yourtenant.onmicrosoft.com** with the tenant Admin password.
-7.  In the Microsoft Endpoint Manager admin center, select **Reports** and then select **Data warehouse**.
+7.  In the Microsoft Endpoint Manager admin center navigation pane, select **Reports** and then select **Data warehouse** in the navigation pane.
 8.  In the **OData feed for reporting service** field, copy the Odata URL into the clipboard.
 9.  Switch back to **Power BI Desktop** and in the OData feed dialog box, paste the **OData URL** into the **URL** box and select **OK**.
 10.  In the **OData feed** dialog box, select the **Organizational account** tab and then select **Sign in**.
