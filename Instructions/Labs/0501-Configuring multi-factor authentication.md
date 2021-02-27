@@ -16,7 +16,7 @@ To provide additional security for user sign on events, you need to configure an
 2.  On the taskbar, select **Microsoft Edge**.
 3.  In the address bar, enter **outlook.office.com** and press Enter.
 4.  At the **Sign in** page, enter **AlexW\@yourtenant.onmicrosoft.com** and then select **Next**.
-5.  On the **Enter password** page, enter the tenant password. At the Edge Save password prompt, select **Save**.
+5.  On the **Enter password** page, enter the tenant password. At the Edge stay signed in prompt, select **yes**.
 6.  In Outlook, close the **Welcome** page. Take note that only the password was required to sign in to Outlook on the Web.
 7.  At the top-right corner, select the **Account manager for Alex Wilber** and then select **Sign out**.
 8.  Close Microsoft Edge.
@@ -122,7 +122,7 @@ To provide additional security for user sign on events, you need to configure an
 16.  On the **Grant** page, select **Grant access**, select the check box next to **Require multi-factor authentication**, and then click **Select**.
 17.  Under **Enable policy**, select **On**.
 18.  Select **Create** to create the Contoso MFA Policy. Notice that the policy is listed with a State of **On**.
-19.  In the Azure Active Directory admin center, select **Users**.
+19.  In the Azure Active Directory admin center, select **Portal menu** then select **Users**.
 20.  In the User list, select **Alex Wilber**.
 21.  On the Alex Wilber page, select **Authentication methods**. Notice that a phone number has already been configured for Alex. This was because he registered MFA during the previous lab. We will leave this setting so that Alex does not have to re-register the phone number.
 
