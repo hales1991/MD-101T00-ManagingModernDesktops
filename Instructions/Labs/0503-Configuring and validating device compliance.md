@@ -34,9 +34,9 @@ If a device meets these requirements, it will be marked as compliant. If the dev
      field, type **10.0.19041.329**.
 11.  On the **Compliance settings** tab, expand **System Security**. Set the **Microsoft Defender Antimalware** setting to **Require**. 
 12.  Select **Next**. On the **Actions for noncompliance** tab, note the action to Mark device noncompliant default setting is immediately. Review how you can configure the number of days after which the device is marked as noncompliant, and configuration additional actions. 
-13.  Select **Next**. On the **Assignments** tab, choose **Select groups to include**.  Select **Windows Devices**, choose **Select**, and then select **Next**. Note: The **Windows Devices** group was created in the Module 3 lab. 
+13.  Select **Next**. On the **Assignments** tab, choose **Add groups**.  Select **Windows Devices**, choose **Select**, and then select **Next**. Note: The **Windows Devices** group was created in the Module 3 lab. 
 14.  Select **Create**.
-15.  In the navigation menu, select **Devices** and then in the Devices navigation pane, select **Compliance policies**.
+15.  In the navigation menu, select **Portal menu** then select **Devices** and then in the Devices navigation pane, select **Compliance policies**.
 16.  On the **Compliance policies** page, select **Compliance policy settings**.
 17.  On the **Compliance policy settings** page, next to **Mark devices with no compliance policy assigned as**, select **Not Compliant** and then select **Save**. This setting will ensure that any device that does not have a compliance policy assigned will be set to Not compliant.
 
@@ -93,11 +93,10 @@ When a user uses a device that is marked as non-compliant, they should not be ab
 
     _Note: This is because SEA-WS3 is a managed device and marked as compliant._
 
-13.  Close Microsoft Edge and sign out of SEA-WS3.
+13.  Close Microsoft Edge.
 
 ### Task 3: Remove the conditional access policy
 
-1.  Switch to **SEA-CL1**.
 2.  On the taskbar, select **Microsoft Edge**.
 3.  In Microsoft Edge, type **https://endpoint.microsoft.com** in the  address bar, and then 
     press **Enter**. 
