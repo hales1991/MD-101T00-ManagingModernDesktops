@@ -18,15 +18,13 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 4. In the Azure Active Directory admin center, in the navigation pane, select **Azure Active Directory**.
 
-5. On the **Contoso** page, under **Manage**, select **Licenses**.
+5. On the **Contoso** page, in the navigation pane under **Manage**, select **Licenses**.
 
-6. On the **Licenses** page, under **Manage**, select **All products**. Take note of the licenses that are available in the tenant. 
+6. On the **Licenses** pane, under **Manage**, select **All products**. Take note of the licenses that are available in the tenant. 
 
 7. Select **Enterprise Mobility + Security E5**. Notice all the users that have been assigned this license. You can assign and remove licenses from this location.
 
-8. Under **General**, select **Service plan detail**. Take note of the services included in the Enterprise Mobility + Security E5 license. Microsoft Intune is one of the supported services for this license.
-
-9. In the Azure Active Directory admin center navigation pane, select **Users**.
+9. In the Azure Active Directory admin center navigation pane,select **Portsl menu** then select **Users**.
 
 10. Select **Aaron Nicholls**.
 
@@ -42,13 +40,13 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 15. In the **Update license assignments** page, select both **Enterprise Mobility + Security E5** and **Office 365 E5**, and then select **Save**.
 
-16. In the Azure Active Directory admin center navigation pane, select **Dashboard**.
+16. In the Azure Active Directory admin center links on top, select **Dashboard**.
 
 ### Task 2: Enable Windows Automatic Enrollment into Microsoft Intune
 
 1.  In **SEA-CL1**, open a new tab in **Microsoft Edge**, and then in the address bar type **https://endpoint.microsoft.com**, and then press **Enter**. The Microsoft Endpoint Manager admin center opens.
 
-2. In the Microsoft Endpoint Manager admin center, select **Devices**.
+2. In the Microsoft Endpoint Manager admin center in the navigation pane, select **Devices**.
 
 3. On the Devices pane, select **Enroll devices**.
 
@@ -73,7 +71,7 @@ You need to prepare for device management using Microsoft Intune. First of all, 
 
 6.  On the Platform settings page, select **Next**.
 7.  On the Scope tags page, select **Next**.
-8.  On the Assignments page, select **Select groups to include**.
+8.  On the Assignments page, select **Add groups**.
 9.  Select **Sales** and then click **Select** and then click **Next**.
 10.  On the Review + create page, select **Create**.
 11.  In the Microsoft Endpoint Manager admin center, in the navigation pane, select **Home**.
