@@ -34,9 +34,9 @@ In this lab, you will configure and apply a Windows Information Protection polic
 ### Task 3: Deploy the policy
 
 1.  On the **Apps|App protection policies** page, in the details pane, select **Windows 10 WIP policy**.
-2.  On the **Windows 10 WIP policy** page, select **Properties**.
+2.  On the **Windows 10 WIP policy** pane, select **Properties**.
 3.  Scroll down and click **Edit** next to **Assignments**.
-4.  Select **+ Select groups to include**, select **Contoso_Marketing**, and then click **Select**.
+4.  Select **+ Add groups**, select **Contoso_Marketing**, and then click **Select**.
 5.  Select **Review + save** and then select **Save**.
 6.  Close Microsoft Edge.
 
@@ -55,7 +55,7 @@ In this lab, you will configure and apply a Windows Information Protection polic
     - New password: **Pa55w.rd1234**
     - Confirm password: **Pa55w.rd1234**
 10.  If the Microsoft Edge Update password prompt displays, select **No thanks**.
-11.  On the top, click **Documents**.
+11.  On the top in the navigation pane, click **Documents**.
 12.  From the desktop, drag and drop the **Sample Document.txt** file into the Documents library to upload the file.
 13.  Once uploaded, delete the **Sample Document.txt** file from the Desktop.
 14.  Close all open windows.
@@ -84,7 +84,7 @@ In this lab, you will configure and apply a Windows Information Protection polic
 2.  In **Microsoft Edge**, navigate to **https://yourtenant.sharepoint.com**.
 3.  If necessary, sign in as **ereeve\@yourtenant.onmicrosoft.com** with the password of **Pa55w.rd1234**.
 4.  Take note of the briefcase icon at the right side of the address bar. Select the icon and verify that this website is managed by the tenant.
-5.  On the top, select **Documents**.
+5.  On the top in the navigation pane, select **Documents**.
 6.  Select **Sample Document.txt** and select **Download**.
 7.  At the bottom of the Edge browser, select **Save as**.
 8.  In the **Save As** dialog box, select the **Documents** folder.
