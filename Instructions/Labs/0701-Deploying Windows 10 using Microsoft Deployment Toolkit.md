@@ -73,7 +73,7 @@ You need to deploy a new Windows 10 workstation named SEA-WS4. You decide to use
 13.  Select the **Task Sequence** tab. 
 14.  Expand the **Validation** node and then select **Validate**.
 15.  On the **Properties** page, remove the check marks next to **Ensure minimum memory** and **Ensure minimum processor speed**. Do not make any other changes.
-16.  On the **Deploy Windows 10 Enterprise Properties** window, select **OK**.
+16.  On the **Deploy Windows 10 Enterprise Properties** window, select the **X** in the top right corner.
 
 ### Task 5: Configure Deployment Share Properties and Windows PE settings
 
