@@ -18,7 +18,7 @@ Contoso Corporation is currently managing users in both AD DS and Azure AD as se
 
     _**Important**: If you experience any problems with launching the download, add the https://download.microsoft.com website to your Trusted sites._
 
-4. On the Microsoft Azure Active Directory Connect page, select **Download** and then select **Save**. Azure AD Connect downloads.
+4. On the Microsoft Azure Active Directory Connect page, select **Download** and then select **Save**. After Azure AD Connect downloads click **Run**.
 
 5. Select **Open folder** and then in the Downloads window, double-click **AzureADConnect.msi**.
 
@@ -69,7 +69,7 @@ Contoso Corporation is currently managing users in both AD DS and Azure AD as se
 10.  In the Navigation pane, under **Admin centers** select **Azure Active Directory**. The Azure Active Directory admin center opens.
 11.  In the Azure Active Directory admin center, in the navigation pane, select **Users**.
 12.  Verify that you see users from your local AD DS. Ensure that these users have the value **Yes** in the **Directory synced** column. 
-13.  In the Navigation pane, select **Azure Active Directory** and then select **Groups**. Verify that you see groups from your local AD DS.
+13.  In the Navigation pane, select **portal menu** then select **Azure Active Directory** and then ine the navigation menu select **Groups**. Verify that you see groups from your local AD DS.
 14.  Select the **Managers** group.
 15.  On the **Managers** group page, select **Members** and then ensure that you see users. Also, verify that you cannot add members or remove this group, as it is sourced from the local Active Directory. 
 16.  Close Microsoft Edge.
