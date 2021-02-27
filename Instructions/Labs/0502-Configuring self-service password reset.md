@@ -44,9 +44,9 @@ The Help Desk has indicated that a large number of support tickets are related t
 10.  For the **Number of questions required to reset**, select **3**.
 11.  In the **Select security questions** section, select **No security questions configured**, then select **Predefined**. Select three questions of your choice, and then select **OK** twice.
 12.  Select **Save**.
-13.  Select **Registration** Select **No** for **Require users to register when signing in**, and the select **Save**.
+13.  Select **Registration** in the navigation pane. Select **No** for **Require users to register when signing in**, and the select **Save**.
 14.  In the navigation pane, select **On-premises integration**.
-15.  Verify that your on-premises writeback client is running and select **Yes** for the **Write back passwords to your on-premises directory** option. Select **Save**.
+15.  Verify that your on-premises writeback client is running and select **Yes** for the **Write back passwords to your on-premises directory** option. Select **Save**. Otherwise move to next the next step.
 16.  Close Microsoft Edge.
 
 ### Task 3: Validate self-service password reset
@@ -58,8 +58,8 @@ The Help Desk has indicated that a large number of support tickets are related t
 5.   On the **Pick an account** page, select **Use another account**.
 6.   On the **Sign in** page, enter **Aaron\@yourtenant.onmicrosoft.com**.
 7.   On the **Enter password** page, enter **Pa55w.rd** and then select **Sign in**. If the Microsoft Edge prompts to save the password, select **Save**.
-8.   On the **My Account** page, in the navigation pane, select **Password**.
-9.   On the change password page, enter the following information and then select submit:
+8.   On the **My Account** page, in the navigation pane, select **CHANGE PASSWORD**.
+9.   On the change password page, enter the following information and then select **Submit**:
     - Old password: **Pa55w.rd**
     - Create new password: **Pa55w.rd1234**
     - Confirm new password: **Pa55w.rd1234**
