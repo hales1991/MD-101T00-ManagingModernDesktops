@@ -16,8 +16,8 @@ You need to configure Azure Active Directory device settings to ensure that all 
 2.  On the taskbar select **Microsoft Edge**, in the address bar type **https://aad.portal.azure.com**, and then press **Enter**.
 3.  Sign in as user Admin@yourtenant.onmicrosoft.com, and use the tenant Admin password. If the **Stay signed in?** prompt appears, select **No**. The Azure Active Directory admin center opens.
 4.  In the Azure Active Directory admin center, in the navigation pane, select **Azure Active Directory**.
-5.  In the **Contoso|Overview** page, under **Manage**, select **Devices**. Notice that there are no devices found, as we have not joined any devices yet.
-6.  On the **Devices** pane, select **Device settings**.
+5.  In the **Contoso|Overview** page, in the **Navigation pane** under **Manage**, select **Devices**. Notice that there are no devices found, as we have not joined any devices yet.
+6.  On the **Devices** page, select **Device settings**.
 7.  In the details pane, under **Users may join devices to Azure AD**, verify that **All** is selected. This means that all Azure AD users are allowed to join their devices to Azure Active Directory.
 8.  In the **Devices to be Azure AD joined or Azure AD registered require Multi-factor Authentication** section, verify that the setting is set to **No**. 
 9.  In the **Maximum number of devices per user** section, select **20**.
@@ -25,8 +25,7 @@ You need to configure Azure Active Directory device settings to ensure that all 
 11.  In the Device Administrators page, select **Add assignments**.
 12.  In the Search box, enter **Megan Bowen**, select the **Megan Bowen** user object, and then select **Add**. Megan Bowen will now be added as a Device Administrator on all Azure AD joined devices.
 13.  Scroll back to or select the **Devices** navigation link at the top of the page.
-14.  On the Device settings page, select **Save**.
-15.  In the Azure Active Directory admin center, select **Dashboard**.
+14.  On the Device settings page, select **Save**. Above save click the **Dashboard** link.
 
 ### Task 2: Perform an Azure AD Join
 
@@ -36,7 +35,7 @@ You need to configure Azure Active Directory device settings to ensure that all 
 4.  In the Accounts navigation pane, select **Access work or school**.
 5.  In the **Access work or school** page, select **Connect**.
 6.  In the **Microsoft account** window, select **Join this device to Azure Active Directory**.
-7.  On the **Sign in** page, type **JoniS\@yourtenant.onmicrosoft.com** and then select **Next**.
+7.  On the **Sign in** page, type **meganb@yourtenant.onmicrosoft.com** and then select **Next**.
 8.  On the **Enter password** page, enter the tenant password provided by your instructor.
 9.  On the **Make sure this is your organization** dialog box, select **Join**.
 10.  On the **You're all set!** page, select **Done**.
@@ -56,27 +55,31 @@ dsregcmd /status
 3.  In the output under **Device State**, verify that **AzureAdJoined : YES** is displayed. This indicates that the device is Azure AD joined.
 4.  Close PowerShell and sign out of SEA-WS1.
 5.  Switch to SEA-CL1.
-6.  In Microsoft Edge, in the Azure Active Directory admin center, select **Azure Active Directory**.
-7.  In the **Contoso** page, under **Manage**, select **Devices**. In the Devices pane, notice that SEA-WS1 is listed. 
-8.  Verify that the **Join Type** is listed as **Azure AD joined** and that the owner is **Joni Sherman**. Also note that the MDM column shows None. This indicates that this device is not managed by Microsoft Intune.
-9.  In the Azure Active Directory admin center, select Azure Active Directory.
+6.  In Microsoft Edge, in the Azure Active Directory admin center, In the **Navigation menu** select **Portal menu** then select **Azure Active Directory**.
+7.  In the **Contoso** page, in the **Navingation Menu** under **Manage**, select **Devices**. In the Devices pane, notice that SEA-WS1 is listed. 
+8.  Verify that the **Join Type** is listed as **Azure AD joined** and that the owner is **Megan Brown**. Also note that the MDM column shows None. This indicates that this device is not managed by Microsoft Intune.
+9.  On top of the page select **Azure Active Directory admin center**. In the Azure Active Directory admin center **Navigation menu**, select **Azure Active Directory**.
 
 ### Task 4: Sign in to Windows 10 as an Azure AD User
 
-1.  Switch to SEA-WS1 and then sign in as **JoniS\@yourtenant.onmicrosoft.com** with the Tenant password as provided by your instructor. Wait for the profile to be created.
+1.  Switch to SEA-WS1 and then sign in as **meganb@yourtenant.onmicrosoft.com** with the Tenant password as provided by your instructor. Wait for the profile to be created.
 2.  At the **Use Windows Hello with your account** page, select **OK**.
 3.  On the **More information required** page, select **Next**.
 4.  On the **Keep your account secure** page, select **I want to set up a different method**.
 5.  In the **Choose a different method** dialog box, select **Phone** and then select **Confirm**.
 6.  On the **Phone** page, in the **Enter phone number** field, enter your mobile phone number which is able to receive text messages. Select **Next**.
 7.  When you receive the verification code, enter the code on the Phone page and then select **Next**.
-8.  On the verification page, select **Next** and then select **Done**.
-9.  On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
-10.  On the **All set!** page, select **OK**.
+8.  You will then be prompted to choose a second method. select **I want to set up a different method**.
+9.  In the **Choose a different method** dialog box, select **Email** and then select **Confirm**.
+10.  On the **Email** page, in the **Which email would you like to use?** field, enter your email address. Select **Next**.
+11.  When you receive the verification code, enter the code on the Email page and then select **Next**.
+12.  On the sucess page, select **Done**.
+13.  On the **Set up a PIN** page, in the **New PIN** and **Confirm PIN** boxes, type **102938** and then select **OK**.
+14.  On the **All set!** page, select **OK**.
 
 ### Task 5: Remove a Windows 10 device from Azure AD
 
-1.  On SEA-WS1, signed in as **JoniS\@yourtenant.onmicrosoft.com**, select **Start** and then select **Settings**.
+1.  On SEA-WS1, signed in as **meganb@yourtenant.onmicrosoft.com**, select **Start** and then select **Settings**.
 2.  In the **Settings** window, select **Accounts**.
 3.  In the Accounts navigation pane, select **Access work or school**.
 4.  In the **Access work or school** page, select **Connected to Contoso's Azure AD**.
@@ -125,7 +128,7 @@ Start-ADSyncSyncCycle -PolicyType Initial
 
 ```
 
-13.  Close the PowerShell window.
+13.  Ensure the resault is **Succes** then close the PowerShell window.
 
 ### Task 3: Configure hybrid Azure AD join in Azure Active Directory Connect
 
@@ -146,7 +149,7 @@ Start-ADSyncSyncCycle -PolicyType Initial
 
 1.  Switch to **SEA-CL2**.
 
-2.  On the taskbar, right-click **Start**, select **Shut down or sign out** and then select **Restart**.
+2.  On the taskbar, right-click **Start**, select **Shut down or sign out** and then select **Restart**. If you are not logged in, select the power icon and reboot from there.
 
     _Note: The reboot will trigger the hybrid Azure AD join on SEA-CL2._
    
