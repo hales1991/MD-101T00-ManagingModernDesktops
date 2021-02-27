@@ -17,7 +17,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 5. On the **General** page, configure the following and then select **Next**:
    - Name: **PowerBI App Deployment**
    - Comment: **Devices targeted to install PowerBI Desktop**
-   - Limiting collection: **All Windows 10 Workstations**
+   - Limiting collection: Select **Browse** then **All Windows 10 Workstations**
 6. On the **Membership Rules** page, select **Next**. At the Configuration Manager warning, select **OK**. You will add a direct member at a later step.
 7. On the **Summary** page, select **Next** and then at the **Completion** page, select **Close**. The **PowerBI App Deployment** collection is displayed in the Device Collections list.
 
@@ -36,26 +36,28 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 3.  In the details pane, select **Microsoft Power BI Desktop (x64)**.
 4.  In the results pane, select the **Deployment Types** tab. Notice that there is one deployment type that is based upon Windows Installer.
 5.  Right-click the **Microsoft PowerBI Desktop (x64) - Windows installer** deployment type and then select **Properties**.
-6.  In the **Properties** dialog box, select the **Programs** tab. Take note of how the application is installed. It will use msiexec with the /q switch which performs a quiet installation.
-7.  In the **Properties** dialog box, select the **Requirements** tab and then select **Add**. 
-8.  In the **Create Requirement** dialog box, configure the following and then select **OK**:
+6.  In the **Properties** dialog box, select the **Deployment types** tab  and after select Microsoft Power BI Desktop top click **Edit**.
+7.  In the new window select the **Programs** tab. Take note of how the application is installed. It will use msiexec with the /q switch which performs a quiet installation.
+8.  In the **Microsoft PowerBI Desktop** dialog box, select the **Requirements** tab and then select **Add**. 
+9.  In the **Create Requirement** dialog box, configure the following and then select **OK**:
     - Category: Device
     - Condition: Operating System
     - Rule type: Value
     - Operator: One of Windows 10 (Select the check box next to Windows 10)
-9.  In the **Properties** dialog box, select **OK**. This requirement will prevent the app from installing on any operating system except Windows 10.
+10.  In the **Microsoft PowerBI Desktop** and **Properties** dialog boxs, select **OK**. This requirement will prevent the app from installing on any operating system except Windows 10.
 
 ### Task 4: Distribute content to distribution points 
 
 1.  In the **Software Library** workspace, select **Microsoft Power BI Desktop (x64)**.
 2.  Right-click **Microsoft Power BI Desktop (x64)** and then select **Distribute Content**.
-3.  On the **Content** page, select **Next**.
-4.  On the **Content Destination** page, select **Add** and then select **Distribution Point**.
-5.  On the **Add Distribution Points** dialog box, select the check box next to **SEA-CFG1.CONTOSO.COM**, and then select **OK**.
-6.  On the **Content Destination** page, select **Next**.
-7.  On the **Summary** page, select **Next** and then select **Close**.
-8.  In the results pane, select **Content Status**. The Content Status page opens for Microsoft Power BI Desktop. In the results pane, verify that a green circle is displayed and that Success:1 displays next to the circle. This indicates that the content is now distributed to the distribution points and can now be deployed to devices.
-9.  In the top left corner select the **Back to Applications** arrow to return to the Software Library Applications node.
+3.   On the **General** page, select **Next**.
+4.  On the **Content** page, select **Next**.
+5.  On the **Content Destination** page, select **Add** and then select **Distribution Point**.
+6.  On the **Add Distribution Points** dialog box, select the check box next to **SEA-CFG1.CONTOSO.COM**, and then select **OK**.
+7.  On the **Content Destination** page, select **Next**.
+8.  On the **Summary** page, select **Next** and then select **Close**.
+9.  In the results pane, select **Content Status**. The Content Status page opens for Microsoft Power BI Desktop. In the results pane, verify that a green circle is displayed and that Success:1 displays next to the circle. This indicates that the content is now distributed to the distribution points and can now be deployed to devices.
+10.  In the top left corner select the **Back to Applications** arrow to return to the Software Library Applications node.
 
 ### Task 5: Create a deployment
 
@@ -73,7 +75,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 12.  On the **Summary** page, select **Next** and then select **Close**. 
 13.  In the results pane, on the **Deployments** tab, verify that the deployment displays.
 
-### Task 5: Use Software center to install a deployed app
+### Task 6: Use Software center to install a deployed app
 
 1.  Switch to SEA-CL1, and if necessary sign in as **Contoso\\Administrator** with the password of **Pa55w.rd**.
 2.  Click **Start** and then enter **Control Panel**.
@@ -83,7 +85,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage desktop workstat
 6.  In the **Configuration Manager Properties** dialog box, select the **Actions** tab.
 7.  On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, and then select **Run Now**. At the message prompt, select **OK**.
 8.  Select **OK** to close the **Configuration Manager Properties**, and then close **Control Panel**. 
-9.  In the notification area, select **New Software is Available** and then select **Open Software Center**. You might need to expand the notification area arrow to display the icon.
+9.  In the start menu type in **Software Center** and select **Software Center**
 10.  In the **Software Center**, on the **Applications** page, notice the new application available named **Microsoft Power BI Desktop (x64)**. This application is now available to any device that is a member of the **PowerBI App Deployment** collection created previously.
 11.  Select **Microsoft Power BI Desktop (x64)** and then select **Install**. The application downloads and installs without user input. You will know that the install was successful when the **Power BI Desktop** shortcut displays on the desktop.
 12.  Close Software Center.
