@@ -37,7 +37,7 @@ Contoso uses Microsoft Endpoint Configuration Manager to manage on-premises work
 1.  In the Microsoft Endpoint Configuration Manager console select the **Software Library** workspace.
 2.  In the **Software Library** workspace, expand **Operating Systems** and then select **Operating System Images**. 
 3.  Right-click **Operating System Images** and then select **Add Operating System Image**. The **Add Operating System Image Wizard** displays.
-4.  On the **Data Source** page, select **Browse** and then enter **\\\\sea-cfg1\\Software\\ISO\\sources\\install.wim** and then choose **Select Folder**.
+4.  On the **Data Source** page, select **Browse** and then enter **\\\\Labfiles\\Software\\ISO\\sources\\install.wim** and then choose **Select Folder**.
 5.  On the **Data Source** page, next to **Architecture**, select **x64** and next to **Language** select **English (United States)** and then select **Next**.
 6.  In the **General** page, configure the following and then select **Next**:
     - Name: **Windows 10 Enterprise**
