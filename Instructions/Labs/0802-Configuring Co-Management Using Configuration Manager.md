@@ -73,7 +73,7 @@ dsregcmd /status
 
 1.  In the Microsoft Endpoint Configuration Manager console, select the **Administration** workspace.
 2.  In the **Administration** workspace, expand **Cloud Services** and then select **Co-management**. 
-3.  In the ribbon, select **Configure co-management**. The **Co-management Configuration Wizard** opens.
+3.  In the ribbon, right click on **Configure co-management** and select **Configure co-management**. The **Co-management Configuration Wizard** opens.
 4.  In the **Co-management Configuration Wizard**, on the **Tenant onboarding** page, select **Sign In**.
 5.  Sign in as as **admin\@yourtenant.onmicrosoft.com** with the default tenant password. After you are signed in, select Next.
 6.  On the **Create AAD Application** warning, select **Yes**.
