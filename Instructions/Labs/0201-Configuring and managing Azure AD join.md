@@ -63,7 +63,7 @@ dsregcmd /status
 
 ### Task 4: Sign in to Windows 10 as an Azure AD User
 
-1.  Switch to SEA-WS1 and then sign in as **JoniS\@yourtenant.onmicrosoft.com** with the Tenant password as provided by your instructor. Wait for the profile to be created.
+1.  Switch to SEA-WS1 and click on **Other user** then sign in as **JoniS@yourtenant.onmicrosoft.com** with the Tenant password as provided by your instructor. Wait for the profile to be created.
 2.  At the **Use Windows Hello with your account** page, select **OK**.
 3.  On the **More information required** page, select **Next**.
 4.  On the **Keep your account secure** page, select **I want to set up a different method**.
@@ -76,7 +76,7 @@ dsregcmd /status
 
 ### Task 5: Remove a Windows 10 device from Azure AD
 
-1.  On SEA-WS1, signed in as **JoniS\@yourtenant.onmicrosoft.com**, select **Start** and then select **Settings**.
+1.  On SEA-WS1, signed in as **JoniS@yourtenant.onmicrosoft.com**, select **Start** and then select **Settings**.
 2.  In the **Settings** window, select **Accounts**.
 3.  In the Accounts navigation pane, select **Access work or school**.
 4.  In the **Access work or school** page, select **Connected to Contoso's Azure AD**.
