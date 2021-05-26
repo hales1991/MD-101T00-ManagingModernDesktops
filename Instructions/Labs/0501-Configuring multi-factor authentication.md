@@ -30,13 +30,13 @@ To provide additional security for user sign on events, you need to configure an
 5.  In the Azure Active Directory admin center, in the navigation pane, select **Users**.
 6.  Select **All users** and then at the top of the results pane select **Multi-Factor Authentication**. You may need to select the ellipse first to view the Multi-Factor Authentication option.
 7.  On the multi-factor authentication page, select **service settings**.
-8.  Scroll down to the **verification options** section. Take note of the various methods that can be configured for user verification. Do not make any changes.
-9.  In the **remember multi-factor authentication on trusted device** section, select the check box next to **Allow users to remember multi-factor authentication on devices they trust**.
+8.  Scroll down to the **Verification options** section. Take note of the various methods that can be configured for user verification. Do not make any changes.
+9.  In the **Remember multi-factor authentication on trusted device** section, select the check box next to **Allow users to remember multi-factor authentication on devices they trust**.
 10.  Next to **Number of days users can trust devices for**, enter **30** and then select **save**. Select **close** when prompted.
-11.  At the top of the page, under **multi-factor authentication**, select **users**.
+11.  At the top of the page, under **Multi-factor authentication**, select **Users**.
 12.  In the user list, select the check box next to **Alex Wilber**.
 13.  In the Alex Wilber page, select **Enable**.
-14.  On the **About enabling multi-factor auth** message, select **enable multi-factor auth**.
+14.  On the **About enabling multi-factor auth** message, select **Enable multi-factor auth**.
 15.  On the **Updates successful** message, select **close**. Take note that the **Multi-Factor Auth Status** for Alex Wilber is now **Enabled**.
 16.  Close Microsoft Edge.
 
